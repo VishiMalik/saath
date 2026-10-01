@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saath - Your AI Companion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+ 
+        <header>
+            <h1>Saath</h1>
+            <p>Your AI Companion</p>
+        </header>
+
+        <main>
+
+            <section class="welcome">
+                <h2>Good Morning! 👋</h2>
+                <p>How can I help you today?</p>
+            </section>
+
+            <section class="chat-box">
+
+                <div id="chatMessages">
+                    <div class="message ai-message">
+                        Hello! I am Saath. How are you feeling today?
+                    </div>
+                </div>
+
+                <div class="input-area">
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Type your message here..."
+                    >
+
+                    <button onclick="sendMessage()">
+                        Send
+                    </button>
+                </div>
+
+            </section>
+
+            <section class="actions">
+
+                <button class="action-button">
+                    📞<br>
+                    Call Family
+                </button>
+
+                <button class="action-button">
+                    ⏰<br>
+                    My Reminders
+                </button>
+
+                <button class="action-button emergency">
+                    🆘<br>
+                    Emergency
+                </button>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Made with ❤️ for families living apart</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

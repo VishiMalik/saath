@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+.app {
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: white;
+}
+
+/* Header */
+
+header {
+    background: #315c9b;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 24px;
+}
+
+/* Main */
+
+main {
+    padding: 30px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 24px;
+}
+
+/* Chat */
+
+.chat-box {
+    border: 2px solid #d5dce5;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#chatMessages {
+    min-height: 180px;
+    padding: 10px;
+}
+
+.message {
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.ai-message {
+    background: #e8f0ff;
+}
+
+/* Input */
+
+.input-area {
+    display: flex;
+    gap: 12px;
+}
+
+input {
+    flex: 1;
+    padding: 18px;
+    font-size: 20px;
+    border: 2px solid #bbb;
+    border-radius: 10px;
+}
+
+button {
+    padding: 16px 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #315c9b;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Action buttons */
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.action-button {
+    min-height: 120px;
+    font-size: 24px;
+    background: #eef3f8;
+    color: #222;
+    border: 2px solid #d0d8e2;
+}
+
+.emergency {
+    background: #c62828;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    .actions {
+        grid-template-columns: 1fr;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
